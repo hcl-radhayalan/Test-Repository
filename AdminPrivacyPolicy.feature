@@ -13,7 +13,7 @@ Feature Ability to link a user to a privacy policy from the login page
        testUsername  testPassword  admin    
     And Select organization as OrganizationName
     And Navigate to Privacy Policy under Users section of Admin main menu
-    When Edit the privacy policy message as To review our Privacy Policy for <OrganizationName> please click HERE
+    When Edit the privacy policy message as To review our Privacy Policy for OrganizationName please click HERE
     And Click on update button on privacy policy editor page
     Then Validate summary message as The Privacy Policy has been successfully saved.
 
@@ -39,4 +39,4 @@ Feature Ability to link a user to a privacy policy from the login page
     And Setup RSA Answers and continue
        Question1  Question2  Question3  Answer1  Answer2  Answer3   
        Default    Default    Default    Auto     Auto     Auto      
-    And Validate overlay-popup as To review our Privacy Policy for <OrganizationName> please click HERE
+    And Validate overlay-popup as To review our Privacy Policy for OrganizationName please click HERE
